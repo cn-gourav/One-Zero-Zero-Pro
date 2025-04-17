@@ -1,1 +1,162 @@
-ECHO is on.
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+
+body {
+     height: 100%;
+     background: rgb(11, 12, 42);
+}
+
+#header {
+     width: 100%;
+     background: rgb(7, 7, 32);
+}
+
+.nav {
+     max-width: 1200px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.nav span {
+     color: red;
+}
+
+.nav h2 {
+     font-size: 1.7rem;
+     font-weight: 600;
+     color: #fff;
+}
+
+.navbar {
+     display: flex;
+     gap: 50px;
+}
+
+.navbar li {
+     list-style: none;
+}
+
+.navbar li a {
+     font-size: 1rem;
+     font-weight: 400;
+     text-decoration: none;
+     color: #fff;
+}
+
+.nav-icons {
+     display: flex;
+     gap: 20px;
+}
+
+.nav-icons i {
+     color: #fff;
+}
+
+.menu-box {
+     max-width: 1200px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: end;
+     align-items: center;
+     background: rgb(76, 76, 76);
+     padding: 10px 0;
+}
+
+.menu-box .nav-box {
+     display: flex;
+     gap: 5px;
+     align-items: center;
+     background: #222222;
+     padding: 2px 7px;
+     margin-right: 10px;
+}
+
+.menu-box .nav-box i {
+     color: #fff;
+}
+
+.menu-box h3 {
+     font-size: 1rem;
+     color: #fff;
+     font-weight: 400;
+}
+
+#main {
+     max-width: 1200px;
+     margin: 0 auto;
+}
+
+.h1-section {
+     background-image: url(/D-2/assets/img/samuel-berner-kcvEQb7GXZc-unsplash.jpg);
+     background-size: cover;
+     background-position: center;
+     height: calc(100vh - 90px);
+     position: relative;
+}
+
+.h1-text {
+     position: absolute;
+     bottom: 2%;
+     left: 5%;
+}
+
+
+.h1-text p {
+     width: 50%;
+     font-size: 1rem;
+     color: #fff;
+     margin: 15px 0;
+}
+
+.h1-text h3 {
+     font-size: 3.5rem;
+     color: #fff;
+     line-height: 1.2;
+}
+
+.h1-btn {
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     gap: 5px;
+}
+
+.h1-text button {
+     padding: 3px 15px;
+     border-radius: 3px;
+     border: none;
+     background: #fff;
+     color: rgb(255, 86, 0);
+     font-size: 0.9rem;
+     font-weight: 400;
+}
+
+.h1-btn button {
+     margin: 20px 0px;
+     padding: 15px 60px;
+     border-radius: 3px;
+     border: none;
+     background: rgb(255, 86, 0);
+     color: #fff;
+     font-weight: 600;
+}
+
+.h1-btn i {
+     padding: 17px 6px;
+     border-radius: 3px;
+     border: none;
+     background: rgb(255, 86, 0);
+     color: #fff;
+     font-weight: 600;
+}
+
+
+.h2-section {
