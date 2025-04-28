@@ -98,7 +98,7 @@ body {
      background-image: url(/D-2/assets/img/samuel-berner-kcvEQb7GXZc-unsplash.jpg);
      background-size: cover;
      background-position: center;
-     height: calc(100vh - 90px);
+     height: calc(100vh - 85px);
      position: relative;
 }
 
@@ -160,3 +160,124 @@ body {
 
 
 .h2-section {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+     background: rgb(11, 12, 42);
+}
+
+.h2-left {
+     width: 65%;
+     height: 100%;
+}
+
+.heading {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 10px 0;
+}
+
+
+.heading h3 {
+     font-size: 1.6rem;
+     font-weight: 600;
+     color: #fff;
+}
+
+.small h3 {
+     font-size: 1.1rem;
+}
+
+.item-box {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+}
+
+.box {
+     width: 6px;
+     height: 30px;
+     background: rgb(255, 86, 0);
+     border-radius: 2px;
+}
+
+.item-view {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 9px;
+}
+
+.item-view h4 {
+     font-size: 0.8rem;
+     color: #fff;
+     font-weight: 400;
+}
+
+.item-view i {
+     color: #fff;
+}
+
+.item-view a {
+     text-decoration: none;
+     color: #ffffffa4;
+}
+
+.active {
+     color: #fff !important;
+}
+
+.card {
+     width: 220px;
+     height: 370px;
+     /* background: red; */
+     border-radius: 2px;
+     position: relative;
+}
+
+.card-img {
+     width: 100%;
+     height: 80%;
+     border-radius: 2px;
+     background: pink;
+}
+
+.h2-btn {
+     margin: 17px 0;
+}
+
+.h2-btn button {
+     padding: 0px 15px;
+     border-radius: 10px;
+     border: none;
+     background: rgba(60, 61, 85, 0.426);
+     color: #fff;
+     font-size: 0.9rem;
+     font-weight: 300;
+}
+
+.card-text p {
+     font-size: 0.9rem;
+     color: #fff;
+     font-weight: 500;
+}
+
+.cards {
+     display: flex;
+     justify-content: space-between;
+     gap: 50px;
+     flex-wrap: wrap;
+}
+
+.card-text {}
+
+.h2-right {
+     width: 35%;
+     height: 100%;
+     
+     /* background: red; */
+}
