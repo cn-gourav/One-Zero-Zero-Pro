@@ -76,6 +76,7 @@ img {
 /* header-section  */
 .navbar {
     height: 13vh;
+    position: relative;
 }
 
 .logo {
@@ -90,6 +91,11 @@ img {
 
 .icon {
     font-size: 1.1rem;
+}
+
+.navlist{
+    background: var(--antique-brown);
+    position: absolute;
 }
 
 
@@ -556,3 +562,65 @@ small {
     font-weight: 300;
     text-align: center;
 }
+
+
+
+@media screen and (max-width: 680px){
+    .h1-heading{
+        font-size: 5rem;
+    }
+
+    .big-para{
+        font-size: 1.5rem;
+    }
+
+    .hero-image{
+        width: 27rem;
+    }
+
+    .hero-section::before{
+        left: 0;
+        width: 18rem;
+        top: 100px;
+    }
+
+    .h2-heading{
+        font-size: 2.3rem;
+    }
+
+    .bed-image{
+        width: 25rem;
+    }
+    
+    .bed-detail{
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s ease-in-out;
+    }
+    
+    .bed-image:hover .bed-detail{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .about-image{
+        width: 20rem;
+        height: 25rem;
+        margin-left: 6rem;
+    }
+
+    .about-image::before{
+        width: 16rem;
+        height: 15rem;
+    }
+
+    .fix-section .h2-heading{
+        font-size: 2.7rem;
+        width: 100%;
+    }
+
+    .avg-para{
+        font-size: .95rem;
+    }
+}
+
