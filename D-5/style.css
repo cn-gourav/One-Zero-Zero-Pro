@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    /* border: .1rem solid red; */
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --gray: #f4f4f4;
+    --golden-hour: #f1b555;
+    --antique-brown: #9b281a;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 1350px;
+    margin: auto;
+    padding-inline: 2rem;
+}
+
+
+.golden-bg{
+    background : var(--golden-hour);
+}
+
+.brown-bg{
+    background: var(--antique-brown);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.mt{
+    margin-top: 3.5rem;
+}
+.p-b{
+    padding-block: 3.5rem;
+}
+
+.gap{
+    gap: 2rem;
+}
+/* header-section  */
+.navbar {
+    height: 13vh;
+}
+
+.logo {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-icon {
+    gap: 1.5rem;
+}
+
+.icon {
+    font-size: 1.1rem;
+}
+
+
+/* main-section  */
+.hero-section {
+    height: calc(100vh - 13vh);
+    justify-content: center;
+    position: relative;
+}
+
+.hero-section::before{
+    content: '';
+    position: absolute;
+    left: 200px;
+    top: 0;
+    width: 25rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    background: var(--gray);
+    z-index: -1;
+}
+.h1-heading {
+    font-size: 9rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+span {
+    font-weight: bold;
+}
+
+.big-para {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.btn {
+    padding: .7rem 2rem;
+    font-size: .9rem;
+    color: var(--white);
+    text-transform: uppercase;
+    border-radius: 5rem;
+    display: block;
+    justify-self: flex-end;
+    transition: .3s ;
+}
+
+.btn:hover{
+    background: var(--black);
+}
+
+.hero-img{
+    width: 50vw;
+}
+
+.h3-heading{
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.category-card{
+    flex: 1;
+    background : var(--gray);
+    height: 30rem;
+    border-radius: 1.5rem;
+    position: relative;
+    transition: transform .3 ease-in-out;
+}
+
+.h5-heading{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.simple-icon {
+    font-size: 1.1rem;
+    color: var(--white);
+    width: 35px;
+    aspect-ratio: 1;
+    border-radius: 5rem;
+    text-align: center;
+    line-height: 35px;
+}
+
+.category-card .flex{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    padding-inline: 1.5rem;
+}
+
+.category-card:hover .simple-icon{
+    background: var(--golden-hour);
+    transform: rotateZ(-50deg) scale(1.15);
+}
+
+
