@@ -346,14 +346,14 @@ small {
     font-weight: 500;
 }
 
-.about .h2-heading{
+.about .h2-heading {
     max-width: 580px;
     margin-top: 0.8rem;
     margin-bottom: 2rem;
     font-weight: 400;
 }
 
-.fix-section{
+.fix-section {
     background-image: url("assest/fix-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -362,7 +362,7 @@ small {
     margin-block: 3rem;
 }
 
-.fix-section::before{
+.fix-section::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -372,11 +372,11 @@ small {
     z-index: -1;
 }
 
-.fix-section *{
+.fix-section * {
     color: var(--white);
 }
 
-.fix-section .h2-heading{
+.fix-section .h2-heading {
     font-size: 3.7rem;
     max-width: 600px;
     font-weight: 400;
@@ -391,4 +391,135 @@ small {
 .fix-section .btn {
     background: var(--white);
     color: black;
+}
+
+.review-card {
+    flex: 1;
+    flex-basis: 300px;
+    text-align: center;
+    background: linear-gradient(to top,
+            var(--gray) 75%,
+            var(--white) 20%);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.review-card .profile {
+    width: 7rem;
+    aspect-ratio: 1;
+    background: gold;
+    border: .4rem solid var(--white);
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.review-card .h5-heading {
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.double-color-bg {
+    background: linear-gradient(to top,
+            #f1b555a5 50%,
+            var(--white) 50%);
+}
+
+.service-card {
+    flex: 1;
+    flex-basis: 350px;
+    height: 20vh;
+    background: var(--gray);
+    padding: 1rem 2.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.service-card .h5-heading {
+    color: var(--black);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: .6rem;
+}
+
+.service-card .service-icon {
+    font-size: 1.9rem;
+    color: var(--antique-brown);
+}
+
+/* footer-section  */
+.footer-bg {
+    background-image: url("assest/footer-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    isolation: isolate;
+}
+
+.footer-bg::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    z-index: -1;
+    backdrop-filter: blur(15px);
+}
+
+.footer-bg * {
+    color: var(--white);
+}
+
+.footer-wrapper .h3-heading {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 100%;
+    margin-block: 1.8rem;
+}
+
+.input-container {
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.242);
+    height: 2.7rem;
+    display: flex;
+    border-radius: 5rem;
+    padding-left: 1.2rem;
+    padding-right: .4rem;
+    display: flex;
+    align-items: center;
+}
+
+.input-container input[type="email"]{
+    flex: 1;
+    background: transparent;
+    font-size: 1rem;
+    color: var(--white);
+    border: none;
+}
+
+.input-container input[type="email"]:focus{
+    outline: none;
+}
+
+.input-container input[type="email"]::placeholder{
+    color: var(--white);   
+}
+
+.social-icons{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-bg .flex{
+    align-items: flex-start;
+}
+
+.footer-wrapper{
+    flex: 1;
 }
