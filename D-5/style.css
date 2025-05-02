@@ -96,6 +96,29 @@ img {
 .navlist{
     background: var(--antique-brown);
     position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 15rem;
+    z-index: 5;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+.navlist-active{
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.navlist *{
+    font-size: 1rem;
+    color: var(--white);
 }
 
 
@@ -171,6 +194,29 @@ span {
     border-radius: 1.5rem;
     position: relative;
     transition: transform .3 ease-in-out;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.category-card::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.category-card:nth-child(1){
+    background-image: url('assest/category1.jpg');
+}
+.category-card:nth-child(2){
+    background-image: url('assest/category2.jpg');
+}
+.category-card:nth-child(3){
+    background-image: url('assest/category3.jpg');
+}
+.category-card:nth-child(4){
+    background-image: url('assest/category4.jpg');
 }
 
 .h5-heading {
@@ -324,7 +370,9 @@ small {
 }
 
 .about-image {
-    background: red;
+    background-image: url('assest/living-room.jpg');
+    background-position: center;
+    background-size: cover;
     width: 32rem;
     height: 37rem;
     border-radius: 1.5rem;
@@ -335,7 +383,9 @@ small {
 
 .about-image::before {
     content: '';
-    background: blue;
+    background-image: url('assest/bedroom.jpg');
+    background-position: inherit;
+    background-size: inherit;
     position: absolute;
     top: 50%;
     left: -100px;
@@ -413,13 +463,18 @@ small {
 .review-card .profile {
     width: 7rem;
     aspect-ratio: 1;
-    background: gold;
     border: .4rem solid var(--white);
     border-radius: 5rem;
     margin-bottom: 1rem;
-    background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.review-card .profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .review-card .h5-heading {
