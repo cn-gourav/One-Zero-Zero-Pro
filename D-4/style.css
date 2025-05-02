@@ -9,7 +9,7 @@
 
 body{
     background: #f9f9f9;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     overflow-x: hidden;
 }
 
@@ -64,14 +64,15 @@ header{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 #text{
     position: absolute;
+    top: 48%;
     font-size: 5rem;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
-
 }
 
 .parallax img {
@@ -80,6 +81,14 @@ header{
     left: 0;
     width: 100%;
     pointer-events: none;
+    object-fit: cover;
+    object-position: center;
+}
+
+#plant{
+    width: 100%; 
+    height: 100%;
+    object-position: bottom;
 }
 
 .sec{
