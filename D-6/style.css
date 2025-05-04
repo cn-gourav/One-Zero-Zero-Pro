@@ -18,6 +18,12 @@
     --purple:#8113ff;
 }
 
+.light-theme{
+    --white:#000;
+    --black:#fff;
+    --purple:#8113ffaa;
+}
+
 main{
     min-height: 100vh;
     background: var(--black);
@@ -161,7 +167,7 @@ p{
     bottom: 45px;
 }
 
-.icon{
+.icon , #theme{
     width: 40px;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -171,9 +177,10 @@ p{
     transition: .3s ease-in-out;
 }
 
-.fa-brands{
+.fa-brands, .fa-sun{
     color: var(--purple);
     font-size: 1.2rem;
+    transition: .3s ease-in-out;
 }
 
 
